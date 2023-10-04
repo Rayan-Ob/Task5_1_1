@@ -1,0 +1,52 @@
+
+.calca {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 120px repeat(5, 80px);
+    box-sizing: content-box;
+}
+
+
+#span-row {
+    grid-row: span 2;
+    background-color: #e48020;
+    border: none;
+}
+
+#span-col {
+
+    grid-column: span 2;
+}
+
+input {
+    grid-column: span 4;
+    text-align: right;
+    font-size: 30px;
+    padding: 0px 15px;
+    color: #253650;
+    border: none;
+    background-color :#eee;
+
+
+
+
+}
+
+button {
+
+    background-color: #253650;
+    color: white;
+    font-size: 20px;
+    padding: 1px 40px;
+
+
+}
+
+
+
+@media screen and (max-width:500px) {
+    button {
+        padding: 1px 20px;
+    }
+
+}
